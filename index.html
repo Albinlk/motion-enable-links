@@ -15,298 +15,321 @@ main{max-width:860px;margin:0 auto;padding:0 12px 28px;display:grid;grid-templat
 .card{display:block;background:#fff;border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .card img,.ph{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#eee}.ph{display:flex;align-items:center;justify-content:center;color:#999;font-size:13px}
 .body{padding:10px}h2{font-size:13.5px;line-height:1.3;margin:0 0 10px;font-weight:600;min-height:35px}
+.card{position:relative}.no{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.72);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px;z-index:1}
+.search{max-width:520px;margin:0 auto;padding:4px 12px 10px}.search input{width:100%;padding:11px 14px;border:1px solid #ddd;border-radius:999px;font-size:15px;background:#fff;outline:none}.search input:focus{border-color:#ee4d2d}
+.empty{grid-column:1/-1;text-align:center;color:#888;font-size:14px;padding:30px 0}
 .btn{display:block;text-align:center;background:#ee4d2d;color:#fff;border-radius:8px;padding:9px;font-size:13px;font-weight:600}
 footer{text-align:center;color:#888;font-size:12px;padding:0 16px 32px;line-height:1.5}.hide{display:none}
 </style></head><body>
 <header><h1>Motion Enable</h1><div class="sub">Product picks</div></header>
 <div class="note">Some links here are affiliate links. Thanks for shopping through them.</div>
+<div class="search"><input id="q" type="search" placeholder="Search by name or number, e.g. 12" aria-label="Search products" autocomplete="off"></div>
 <div class="chips"><button class="chip on" data-c="All">All</button><button class="chip" data-c="Fashion">Fashion</button><button class="chip" data-c="Food">Food</button><button class="chip" data-c="Home">Home</button><button class="chip" data-c="Kids">Kids</button><button class="chip" data-c="Kitchen">Kitchen</button><button class="chip" data-c="Personal care">Personal care</button><button class="chip" data-c="_default">_default</button></div>
 <main>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/8KqHPAjkX2" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/19191419204.jpg" alt="Botare Facial Tissue 4-Pack" loading="lazy" width="300" height="300"><div class="body"><h2>Botare Facial Tissue 4-Pack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/2VsUSS5xNN" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/17453759474.jpg" alt="Black Grid Laundry Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Black Grid Laundry Basket</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/905yCOhDBE" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/20282315547.jpg" alt="Carpet Floor Sweeper" loading="lazy" width="300" height="300"><div class="body"><h2>Carpet Floor Sweeper</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/5VW61xuXII" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/29571420661.jpg" alt="MODOFO Stainless Steel Teapot 1L" loading="lazy" width="300" height="300"><div class="body"><h2>MODOFO Stainless Steel Teapot 1L</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/113gfhBfPw" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44907019334.jpg" alt="Seaways Bathroom Cleaner" loading="lazy" width="300" height="300"><div class="body"><h2>Seaways Bathroom Cleaner</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/60SMcssdHT" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25196582086.jpg" alt="Splatter Screen Cover" loading="lazy" width="300" height="300"><div class="body"><h2>Splatter Screen Cover</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/1gJNSv985B" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27463466066.jpg" alt="Rolling Laundry Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Rolling Laundry Basket</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/3B8BFg3Q1Z" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28753614714.jpg" alt="Tiered Rolling Shelf" loading="lazy" width="300" height="300"><div class="body"><h2>Tiered Rolling Shelf</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/5AtFdLvny9" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/3541063548.jpg" alt="Cordless Drill" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Drill</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/7pu0oFleYu" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42769350799.jpg" alt="Kitchen Cleaning Paste" loading="lazy" width="300" height="300"><div class="body"><h2>Kitchen Cleaning Paste</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/8AWrCrkNt4" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42710912264.jpg" alt="Yellow Straw Tumbler" loading="lazy" width="300" height="300"><div class="body"><h2>Yellow Straw Tumbler</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/3LRbRz2mgg" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/8964394687.jpg" alt="Metal Bunk Bed" loading="lazy" width="300" height="300"><div class="body"><h2>Metal Bunk Bed</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/9Kiob0fwWR" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41209590265.jpg" alt="Wall-Mount Spice Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Wall-Mount Spice Rack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/80DR0Yl1E3" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/43428175164.jpg" alt="Lidded Stainless Container Set" loading="lazy" width="300" height="300"><div class="body"><h2>Lidded Stainless Container Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/LnzsTECmn" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27059776152.jpg" alt="Wooden Shoe Cabinet" loading="lazy" width="300" height="300"><div class="body"><h2>Wooden Shoe Cabinet</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/8fT7nmiTsF" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44352502614.jpg" alt="Tiered Dish Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Tiered Dish Rack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/8V9hbTj7C5" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/55310721271.jpg" alt="Cotton Fitted Bedsheet" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Fitted Bedsheet</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/16wnu8yMh" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/tg39.jpg" alt="Cushioned Sandals" loading="lazy" width="300" height="300"><div class="body"><h2>Cushioned Sandals</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/7faabwmHtt" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/24136804110.jpg" alt="Patchwork Cotton Bedsheet Set" loading="lazy" width="300" height="300"><div class="body"><h2>Patchwork Cotton Bedsheet Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/9V2EnJfJBS" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27919476186.jpg" alt="Full-Length Standing Mirror" loading="lazy" width="300" height="300"><div class="body"><h2>Full-Length Standing Mirror</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/AUulz9bV8f" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/40117076178.jpg" alt="Pastel Straw Tumbler" loading="lazy" width="300" height="300"><div class="body"><h2>Pastel Straw Tumbler</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/6L5D1UrMbV" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41979498033.jpg" alt="Stackable Storage Cabinet" loading="lazy" width="300" height="300"><div class="body"><h2>Stackable Storage Cabinet</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/7AeK11oBth" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/54403155162.jpg" alt="Flower Bedroom Carpet" loading="lazy" width="300" height="300"><div class="body"><h2>Flower Bedroom Carpet</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/8pmY05hqXG" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/56512361087.jpg" alt="Cotton Fitted Sheet" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Fitted Sheet</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/gQqH5Cw5u" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42479172319.jpg" alt="Pink Floral Tumbler" loading="lazy" width="300" height="300"><div class="body"><h2>Pink Floral Tumbler</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/2qVKr44ghX" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41002012438.jpg" alt="Ceramic Seasoning Jar Set" loading="lazy" width="300" height="300"><div class="body"><h2>Ceramic Seasoning Jar Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/qkGTOCIly" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42560871993.jpg" alt="Tulip Night Light" loading="lazy" width="300" height="300"><div class="body"><h2>Tulip Night Light</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/5q4aX2dopR" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/tg11.jpg" alt="Block Heel Sandals" loading="lazy" width="300" height="300"><div class="body"><h2>Block Heel Sandals</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="_default" href="https://s.shopee.com.my/7fWUbts0A5" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/tg50.jpg" alt="Compact Projector" loading="lazy" width="300" height="300"><div class="body"><h2>Compact Projector</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/17DZXI3jo" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/tg56.jpg" alt="Rose Gold Buckle Ring" loading="lazy" width="300" height="300"><div class="body"><h2>Rose Gold Buckle Ring</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/4VZcvuLoG8" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/tg57.jpg" alt="Solitaire Gold Ring" loading="lazy" width="300" height="300"><div class="body"><h2>Solitaire Gold Ring</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/3g4N35D5DJ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/22455760152.jpg" alt="Wide-Leg Palazzo Jeans" loading="lazy" width="300" height="300"><div class="body"><h2>Wide-Leg Palazzo Jeans</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/Lnv4xPlyL" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/21735575372.jpg" alt="Plain Black Bedding Set" loading="lazy" width="300" height="300"><div class="body"><h2>Plain Black Bedding Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/60SHpN4CSy" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/11929587897.jpg" alt="DHERBS Aura Seri Bundle" loading="lazy" width="300" height="300"><div class="body"><h2>DHERBS Aura Seri Bundle</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/2BFZGKInFu" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/23570921686.jpg" alt="Cordless Vacuum with Mop" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Vacuum with Mop</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/7AeFDVzl6J" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/23910916311.jpg" alt="Long Inner Jubah" loading="lazy" width="300" height="300"><div class="body"><h2>Long Inner Jubah</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/3VkwqmDiYI" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25934428174.jpg" alt="Long-Sleeve Training Top" loading="lazy" width="300" height="300"><div class="body"><h2>Long-Sleeve Training Top</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/9pf0OPpbh5" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/4297296729.jpg" alt="Plaid Wide-Leg Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Plaid Wide-Leg Pants</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/1B4gLR2dE" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/951080170.jpg" alt="Brown Formulation Body Soap" loading="lazy" width="300" height="300"><div class="body"><h2>Brown Formulation Body Soap</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/70Kp1D0ORG" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27072973783.jpg" alt="Aroma Bath Gel Combo" loading="lazy" width="300" height="300"><div class="body"><h2>Aroma Bath Gel Combo</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/3qNnFOCRrL" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28035420981.jpg" alt="Light Daypack" loading="lazy" width="300" height="300"><div class="body"><h2>Light Daypack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/gQlTZOVIV" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/16308624568.jpg" alt="Cotton Silk Night Dress" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Silk Night Dress</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/30ogFrFcZ7" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/21764502440.jpg" alt="Cotton Sarung Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Sarung Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/AAHqn1oL08" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/58156709500.jpg" alt="Dubai Chewy Cookie Mochi Kunafa" loading="lazy" width="300" height="300"><div class="body"><h2>Dubai Chewy Cookie Mochi Kunafa</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/qkBfsNrxW" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/16092307330.jpg" alt="High-Waist Seamless Shorts" loading="lazy" width="300" height="300"><div class="body"><h2>High-Waist Seamless Shorts</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/1B4gLR2eJ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/18078716262.jpg" alt="Crunchy Garlic Chilli Oil" loading="lazy" width="300" height="300"><div class="body"><h2>Crunchy Garlic Chilli Oil</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/1qciriK3ul" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/22981761978.jpg" alt="Standing Fan, 3 Speeds" loading="lazy" width="300" height="300"><div class="body"><h2>Standing Fan, 3 Speeds</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/113bsBNEbW" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/24588136866.jpg" alt="Portable Gas Stove Dessini" loading="lazy" width="300" height="300"><div class="body"><h2>Portable Gas Stove Dessini</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/4qGKRE8dpd" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/20445533205.jpg" alt="VitaHealth Pre+Probiotics" loading="lazy" width="300" height="300"><div class="body"><h2>VitaHealth Pre+Probiotics</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/1LgSGnLxwh" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28626545789.jpg" alt="Ginger Hair Colour Dye 400ml" loading="lazy" width="300" height="300"><div class="body"><h2>Ginger Hair Colour Dye 400ml</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/7ptw0jxDkV" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44474311392.jpg" alt="Pleated V-Neck Top" loading="lazy" width="300" height="300"><div class="body"><h2>Pleated V-Neck Top</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/2gBprFGtE0" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/52453813288.jpg" alt="Striped Button Shirt" loading="lazy" width="300" height="300"><div class="body"><h2>Striped Button Shirt</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/AKbGzKnhgE" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/53759013775.jpg" alt="Instant Syria Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Instant Syria Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/6fhycb1f7A" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/54212486910.jpg" alt="Oriental White Coffee Sachets" loading="lazy" width="300" height="300"><div class="body"><h2>Oriental White Coffee Sachets</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/80DMD2waPY" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/10911050618.jpg" alt="Burnt Sugar Cake" loading="lazy" width="300" height="300"><div class="body"><h2>Burnt Sugar Cake</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/1LgSGnLxvc" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25094681705.jpg" alt="Loose Palazzo Trousers" loading="lazy" width="300" height="300"><div class="body"><h2>Loose Palazzo Trousers</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/6Ali1g3Z81" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/40974040849.jpg" alt="Rotating Clothes Drying Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Rotating Clothes Drying Rack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/7KxfPoz7lM" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41430089956.jpg" alt="Car Neck and Lumbar Pillow Set" loading="lazy" width="300" height="300"><div class="body"><h2>Car Neck and Lumbar Pillow Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/5AtApq7N9j" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/45104402196.jpg" alt="Pleated Wide-Leg Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Pleated Wide-Leg Pants</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/1BN24UMbGZ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/49309743803.jpg" alt="Wide-Leg Drawstring Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Wide-Leg Drawstring Pants</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/113bsBNEcX" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42422949776.jpg" alt="Muslimah Tunic and Pants Suit" loading="lazy" width="300" height="300"><div class="body"><h2>Muslimah Tunic and Pants Suit</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/2VsPewHWYx" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/46303888105.jpg" alt="Matte Compact Powder" loading="lazy" width="300" height="300"><div class="body"><h2>Matte Compact Powder</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/gQlTZOVHQ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/54307651375.jpg" alt="Balloon Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Balloon Pants</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/9APJbBs92t" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/40123515235.jpg" alt="Electric Food Chopper" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Food Chopper</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/8V9cnxugOh" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/47608247984.jpg" alt="Instant Bawal Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Instant Bawal Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/Lnv4xPlxK" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/40773830736.jpg" alt="Electric Spice and Coffee Grinder" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Spice and Coffee Grinder</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/3LRWeTELsC" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/53766047805.jpg" alt="Instant Purdah Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Instant Purdah Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/1VzsT6LKaf" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/40282749440.jpg" alt="7-Hole Non-Stick Pan" loading="lazy" width="300" height="300"><div class="body"><h2>7-Hole Non-Stick Pan</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/3VkwqmDiXF" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41004694265.jpg" alt="Wide-Leg Baggy Jeans" loading="lazy" width="300" height="300"><div class="body"><h2>Wide-Leg Baggy Jeans</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/9fLaC6qF11" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44028271994.jpg" alt="Hijab Telekung Set" loading="lazy" width="300" height="300"><div class="body"><h2>Hijab Telekung Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/9KijnUrVgv" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/45914919267.jpg" alt="Printed Bawal Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Printed Bawal Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/4LK3qJAXqU" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/55661608428.jpg" alt="Lidded Stainless Casserole Set" loading="lazy" width="300" height="300"><div class="body"><h2>Lidded Stainless Casserole Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/5LCb296jom" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44868331948.jpg" alt="Straight-Leg Jeans" loading="lazy" width="300" height="300"><div class="body"><h2>Straight-Leg Jeans</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/9zyQaioyL7" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/45566267770.jpg" alt="Lace Baju Kurung" loading="lazy" width="300" height="300"><div class="body"><h2>Lace Baju Kurung</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/3VkpjsR6Ma" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/24914619296.jpg" alt="Honeycomb Stainless Steel Wok" loading="lazy" width="300" height="300"><div class="body"><h2>Honeycomb Stainless Steel Wok</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/20w1x7WoPw" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/15098540758.jpg" alt="Foldable Storage Bench" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Storage Bench</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/1BMuxaZz5u" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/11970364753.jpg" alt="Cat Backpack Carrier" loading="lazy" width="300" height="300"><div class="body"><h2>Cat Backpack Carrier</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/AKb9sR15VK" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/23820114366.jpg" alt="Hooded Zip Windbreaker" loading="lazy" width="300" height="300"><div class="body"><h2>Hooded Zip Windbreaker</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/6L5175GJcQ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25184734808.jpg" alt="Smart Watch" loading="lazy" width="300" height="300"><div class="body"><h2>Smart Watch</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/40h6KnPCLd" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28068923211.jpg" alt="Insulated Flask 1.5L" loading="lazy" width="300" height="300"><div class="body"><h2>Insulated Flask 1.5L</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/9APCUI5WrC" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42131762495.jpg" alt="Six-Pocket Cargo Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Six-Pocket Cargo Pants</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/4fwn81Mezh" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25121517690.jpg" alt="Sambal Belacan 270g" loading="lazy" width="300" height="300"><div class="body"><h2>Sambal Belacan 270g</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/4VdMviNIKk" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27433824749.jpg" alt="TAVA Adjustable Metal Shelf" loading="lazy" width="300" height="300"><div class="body"><h2>TAVA Adjustable Metal Shelf</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/8fSvtN7Qt6" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/29323123552.jpg" alt="Nasi Khowmok Instant Set" loading="lazy" width="300" height="300"><div class="body"><h2>Nasi Khowmok Instant Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/80DF699yF2" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/29919260965.jpg" alt="Electric Egg Boiler and Steamer" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Egg Boiler and Steamer</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kids" href="https://s.shopee.com.my/8Kq5Ul8hZ8" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/5261288082.jpg" alt="Kids Cotton Pyjama Set" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Cotton Pyjama Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/2BFS9QWB3w" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/15948821520.jpg" alt="Cordless Impact Wrench Set" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Impact Wrench Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/30oZ8xT0Nb" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/21180181830.jpg" alt="Crispy Anchovy Sambal 100g" loading="lazy" width="300" height="300"><div class="body"><h2>Crispy Anchovy Sambal 100g</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kids" href="https://s.shopee.com.my/4B0WX6OZ0e" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25001927648.jpg" alt="Kids Telekung Set" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Telekung Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/3B7zLGSN2c" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27834687390.jpg" alt="Asam Boi Sweet and Sour Jar" loading="lazy" width="300" height="300"><div class="body"><h2>Asam Boi Sweet and Sour Jar</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/60SAiTHaHJ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/29315127739.jpg" alt="Crispy Tempeh Sambal" loading="lazy" width="300" height="300"><div class="body"><h2>Crispy Tempeh Sambal</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/1qcbkoXRjy" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41419080511.jpg" alt="Thai Fried Chicken Seasoning" loading="lazy" width="300" height="300"><div class="body"><h2>Thai Fried Chicken Seasoning</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/3LRPXZRjhZ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/50010879251.jpg" alt="Insulated Tumbler with Charm" loading="lazy" width="300" height="300"><div class="body"><h2>Insulated Tumbler with Charm</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/7Ae86cD8uU" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/55763967437.jpg" alt="13-Piece Cookware Set" loading="lazy" width="300" height="300"><div class="body"><h2>13-Piece Cookware Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/50ZdWdLOJn" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/21185987983.jpg" alt="Telekung Cotton Set" loading="lazy" width="300" height="300"><div class="body"><h2>Telekung Cotton Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/6L5175GJbP" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42211054092.jpg" alt="V-Neck Button Blouse" loading="lazy" width="300" height="300"><div class="body"><h2>V-Neck Button Blouse</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/BUNlkdn7k" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44181064384.jpg" alt="Sweet Fish Satey Snack" loading="lazy" width="300" height="300"><div class="body"><h2>Sweet Fish Satey Snack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/1LgL9tZLkr" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28883202525.jpg" alt="Muslimah Tunic and Pants Set" loading="lazy" width="300" height="300"><div class="body"><h2>Muslimah Tunic and Pants Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/9zyJTp2MAD" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/24845765742.jpg" alt="Leather Shoulder Handbag" loading="lazy" width="300" height="300"><div class="body"><h2>Leather Shoulder Handbag</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/7ptotqAbYY" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28785054481.jpg" alt="Dark Chocolate Almond Cluster" loading="lazy" width="300" height="300"><div class="body"><h2>Dark Chocolate Almond Cluster</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/AUua4k0S9K" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42180930383.jpg" alt="Scented Toilet Cleaner Spray" loading="lazy" width="300" height="300"><div class="body"><h2>Scented Toilet Cleaner Spray</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/905mHz6ACB" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/42327158757.jpg" alt="Mini Electric Waffle Maker" loading="lazy" width="300" height="300"><div class="body"><h2>Mini Electric Waffle Maker</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/8V9Vh484D8" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/52306236457.jpg" alt="Stackable Drawer Organiser" loading="lazy" width="300" height="300"><div class="body"><h2>Stackable Drawer Organiser</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/20w1x7WoOv" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28550449166.jpg" alt="Camping Tableware Set" loading="lazy" width="300" height="300"><div class="body"><h2>Camping Tableware Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/6fhrVhF2vN" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/44320874938.jpg" alt="Kek Batik Chocolate Bites" loading="lazy" width="300" height="300"><div class="body"><h2>Kek Batik Chocolate Bites</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/6q1Hi0EPaO" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/46111803735.jpg" alt="Homemade Sukiya Sauce 300ml" loading="lazy" width="300" height="300"><div class="body"><h2>Homemade Sukiya Sauce 300ml</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/AAHjg81ipE" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27239724559.jpg" alt="Hen Egg Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Hen Egg Basket</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/5LCTvFK7dF" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/48160576324.jpg" alt="Folding Recliner Chair" loading="lazy" width="300" height="300"><div class="body"><h2>Folding Recliner Chair</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/9petHW2zWJ" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/24718012191.jpg" alt="Rattan Basket Storage Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Rattan Basket Storage Rack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/2BFS9QWB4z" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/41226764478.jpg" alt="Electric Scrub Brush" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Scrub Brush</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/8AWfIS9Ku5" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/57756145272.jpg" alt="Peplum Baju Kurung" loading="lazy" width="300" height="300"><div class="body"><h2>Peplum Baju Kurung</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/AUua4k0SAN" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/57265127815.jpg" alt="Pull-Out Kitchen Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Pull-Out Kitchen Rack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/W76FG4xLm" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/20384021767.jpg" alt="Chef Zam Instant Fried Rice" loading="lazy" width="300" height="300"><div class="body"><h2>Chef Zam Instant Fried Rice</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/8KpyuQdmUi" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25226750641.jpg" alt="Mini Electric Rice Cooker 1.8L" loading="lazy" width="300" height="300"><div class="body"><h2>Mini Electric Rice Cooker 1.8L</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/4B0PwltdxL" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27872309197.jpg" alt="Sambal Garing Kruk Kruk Ateen" loading="lazy" width="300" height="300"><div class="body"><h2>Sambal Garing Kruk Kruk Ateen</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/1LgDEn1mf3" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/6058598792.jpg" alt="Aglio Olio Seasoning" loading="lazy" width="300" height="300"><div class="body"><h2>Aglio Olio Seasoning</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/Lng2x5agl" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/21056927705.jpg" alt="SwissThomas Electric Kettle 2.2L" loading="lazy" width="300" height="300"><div class="body"><h2>SwissThomas Electric Kettle 2.2L</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/50ZVbWnpDb" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/24909111872.jpg" alt="SwissThomas Capsule Chopper 900ml" loading="lazy" width="300" height="300"><div class="body"><h2>SwissThomas Capsule Chopper 900ml</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/9zyCtUXR70" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/2107463589.jpg" alt="Foldable Clothes Drying Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Clothes Drying Rack</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/7VGrutgxBH" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/26429989630.jpg" alt="Portable Handheld Fan" loading="lazy" width="300" height="300"><div class="body"><h2>Portable Handheld Fan</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/905fhebF9x" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27559234728.jpg" alt="Stainless Steel Handheld Tumbler 900ml" loading="lazy" width="300" height="300"><div class="body"><h2>Stainless Steel Handheld Tumbler 900ml</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/2qV2MJyifD" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/18503504263.jpg" alt="Dr.Althea 345 Cream" loading="lazy" width="300" height="300"><div class="body"><h2>Dr.Althea 345 Cream</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/113MqB33Kx" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/19994131505.jpg" alt="Cordless Mini Chopper 250ml" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Mini Chopper 250ml</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/9fLMUsYhmq" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/22278455894.jpg" alt="Rice Storage Box" loading="lazy" width="300" height="300"><div class="body"><h2>Rice Storage Box</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/40gzkSuHII" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/26162011609.jpg" alt="Non-Stick Wok 34cm" loading="lazy" width="300" height="300"><div class="body"><h2>Non-Stick Wok 34cm</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/8KpyuQdmVl" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/26557777683.jpg" alt="Muslimah Top and Pants Set" loading="lazy" width="300" height="300"><div class="body"><h2>Muslimah Top and Pants Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/W77a27bOT" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28506753775.jpg" alt="Mini Massage Gun" loading="lazy" width="300" height="300"><div class="body"><h2>Mini Massage Gun</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/BUHBQ8s4R" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/26863981267.jpg" alt="Foldable Laundry Basket on Wheels" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Laundry Basket on Wheels</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Food" href="https://s.shopee.com.my/4qG5PDoSYW" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/8581358800.jpg" alt="Keropok Lekor Original Terengganu" loading="lazy" width="300" height="300"><div class="body"><h2>Keropok Lekor Original Terengganu</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Fashion" href="https://s.shopee.com.my/1qcVAU2Whc" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/18708880379.jpg" alt="Men&#x27;s Linen Short Sleeve Shirt" loading="lazy" width="300" height="300"><div class="body"><h2>Men&#x27;s Linen Short Sleeve Shirt</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kids" href="https://s.shopee.com.my/5fpDjWnvtw" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/23238419129.jpg" alt="Kids Makeup Case Play Set" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Makeup Case Play Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/5q8dvpnIYz" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/25681024467.jpg" alt="Rechargeable Hair Clipper" loading="lazy" width="300" height="300"><div class="body"><h2>Rechargeable Hair Clipper</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/1BMn2U2Pzy" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/29367440495.jpg" alt="Homeworth Rubbish Bin 10/15L" loading="lazy" width="300" height="300"><div class="body"><h2>Homeworth Rubbish Bin 10/15L</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/6AlUKRm1t9" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/19188634763.jpg" alt="Foldable Laundry Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Laundry Basket</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kids" href="https://s.shopee.com.my/1gJ4yB3A1Y" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/14671386889.jpg" alt="Kids Princess Play Tent" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Princess Play Tent</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Home" href="https://s.shopee.com.my/2BFLZ61G0l" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28620271028.jpg" alt="Foldable Laptop Bed Table" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Laptop Bed Table</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Personal care" href="https://s.shopee.com.my/7KxRiahaXH" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/306421550.jpg" alt="Naturie Hatomugi Skin Lotion 500ml" loading="lazy" width="300" height="300"><div class="body"><h2>Naturie Hatomugi Skin Lotion 500ml</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kids" href="https://s.shopee.com.my/8V9P6jd9Am" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/9952432232.jpg" alt="VTech 2-in-1 Basketball and Soccer Set" loading="lazy" width="300" height="300"><div class="body"><h2>VTech 2-in-1 Basketball and Soccer Set</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kids" href="https://s.shopee.com.my/9KiW6GZyTr" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/27971615404.jpg" alt="Girls&#x27; Party Dress" loading="lazy" width="300" height="300"><div class="body"><h2>Girls&#x27; Party Dress</h2><span class="btn">Buy on Shopee</span></div></a>
-<a class="card" data-cat="Kitchen" href="https://s.shopee.com.my/3B7skvxRzF" target="_blank" rel="sponsored nofollow noopener">
-  <img src="img/28935887546.jpg" alt="Ceramic Tableware Set" loading="lazy" width="300" height="300"><div class="body"><h2>Ceramic Tableware Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="7" data-name="botare facial tissue 4-pack" href="https://s.shopee.com.my/8KqHPAjkX2" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#7</span><img src="img/19191419204.jpg" alt="Botare Facial Tissue 4-Pack" loading="lazy" width="300" height="300"><div class="body"><h2>Botare Facial Tissue 4-Pack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="116" data-name="black grid laundry basket" href="https://s.shopee.com.my/2VsUSS5xNN" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#116</span><img src="img/17453759474.jpg" alt="Black Grid Laundry Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Black Grid Laundry Basket</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="117" data-name="carpet floor sweeper" href="https://s.shopee.com.my/905yCOhDBE" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#117</span><img src="img/20282315547.jpg" alt="Carpet Floor Sweeper" loading="lazy" width="300" height="300"><div class="body"><h2>Carpet Floor Sweeper</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="61" data-name="modofo stainless steel teapot 1l" href="https://s.shopee.com.my/5VW61xuXII" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#61</span><img src="img/29571420661.jpg" alt="MODOFO Stainless Steel Teapot 1L" loading="lazy" width="300" height="300"><div class="body"><h2>MODOFO Stainless Steel Teapot 1L</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="131" data-name="seaways bathroom cleaner" href="https://s.shopee.com.my/113gfhBfPw" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#131</span><img src="img/44907019334.jpg" alt="Seaways Bathroom Cleaner" loading="lazy" width="300" height="300"><div class="body"><h2>Seaways Bathroom Cleaner</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="119" data-name="splatter screen cover" href="https://s.shopee.com.my/60SMcssdHT" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#119</span><img src="img/25196582086.jpg" alt="Splatter Screen Cover" loading="lazy" width="300" height="300"><div class="body"><h2>Splatter Screen Cover</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="120" data-name="rolling laundry basket" href="https://s.shopee.com.my/1gJNSv985B" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#120</span><img src="img/27463466066.jpg" alt="Rolling Laundry Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Rolling Laundry Basket</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="121" data-name="tiered rolling shelf" href="https://s.shopee.com.my/3B8BFg3Q1Z" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#121</span><img src="img/28753614714.jpg" alt="Tiered Rolling Shelf" loading="lazy" width="300" height="300"><div class="body"><h2>Tiered Rolling Shelf</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="122" data-name="cordless drill" href="https://s.shopee.com.my/5AtFdLvny9" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#122</span><img src="img/3541063548.jpg" alt="Cordless Drill" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Drill</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="70" data-name="kitchen cleaning paste" href="https://s.shopee.com.my/7pu0oFleYu" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#70</span><img src="img/42769350799.jpg" alt="Kitchen Cleaning Paste" loading="lazy" width="300" height="300"><div class="body"><h2>Kitchen Cleaning Paste</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="129" data-name="yellow straw tumbler" href="https://s.shopee.com.my/8AWrCrkNt4" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#129</span><img src="img/42710912264.jpg" alt="Yellow Straw Tumbler" loading="lazy" width="300" height="300"><div class="body"><h2>Yellow Straw Tumbler</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="135" data-name="metal bunk bed" href="https://s.shopee.com.my/3LRbRz2mgg" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#135</span><img src="img/8964394687.jpg" alt="Metal Bunk Bed" loading="lazy" width="300" height="300"><div class="body"><h2>Metal Bunk Bed</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="125" data-name="wall-mount spice rack" href="https://s.shopee.com.my/9Kiob0fwWR" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#125</span><img src="img/41209590265.jpg" alt="Wall-Mount Spice Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Wall-Mount Spice Rack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="71" data-name="lidded stainless container set" href="https://s.shopee.com.my/80DR0Yl1E3" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#71</span><img src="img/43428175164.jpg" alt="Lidded Stainless Container Set" loading="lazy" width="300" height="300"><div class="body"><h2>Lidded Stainless Container Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="51" data-name="wooden shoe cabinet" href="https://s.shopee.com.my/LnzsTECmn" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#51</span><img src="img/27059776152.jpg" alt="Wooden Shoe Cabinet" loading="lazy" width="300" height="300"><div class="body"><h2>Wooden Shoe Cabinet</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="130" data-name="tiered dish rack" href="https://s.shopee.com.my/8fT7nmiTsF" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#130</span><img src="img/44352502614.jpg" alt="Tiered Dish Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Tiered Dish Rack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="133" data-name="cotton fitted bedsheet" href="https://s.shopee.com.my/8V9hbTj7C5" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#133</span><img src="img/55310721271.jpg" alt="Cotton Fitted Bedsheet" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Fitted Bedsheet</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="137" data-name="cushioned sandals" href="https://s.shopee.com.my/16wnu8yMh" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#137</span><img src="img/tg39.jpg" alt="Cushioned Sandals" loading="lazy" width="300" height="300"><div class="body"><h2>Cushioned Sandals</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="118" data-name="patchwork cotton bedsheet set" href="https://s.shopee.com.my/7faabwmHtt" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#118</span><img src="img/24136804110.jpg" alt="Patchwork Cotton Bedsheet Set" loading="lazy" width="300" height="300"><div class="body"><h2>Patchwork Cotton Bedsheet Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="54" data-name="full-length standing mirror" href="https://s.shopee.com.my/9V2EnJfJBS" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#54</span><img src="img/27919476186.jpg" alt="Full-Length Standing Mirror" loading="lazy" width="300" height="300"><div class="body"><h2>Full-Length Standing Mirror</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="123" data-name="pastel straw tumbler" href="https://s.shopee.com.my/AUulz9bV8f" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#123</span><img src="img/40117076178.jpg" alt="Pastel Straw Tumbler" loading="lazy" width="300" height="300"><div class="body"><h2>Pastel Straw Tumbler</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="126" data-name="stackable storage cabinet" href="https://s.shopee.com.my/6L5D1UrMbV" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#126</span><img src="img/41979498033.jpg" alt="Stackable Storage Cabinet" loading="lazy" width="300" height="300"><div class="body"><h2>Stackable Storage Cabinet</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="132" data-name="flower bedroom carpet" href="https://s.shopee.com.my/7AeK11oBth" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#132</span><img src="img/54403155162.jpg" alt="Flower Bedroom Carpet" loading="lazy" width="300" height="300"><div class="body"><h2>Flower Bedroom Carpet</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="134" data-name="cotton fitted sheet" href="https://s.shopee.com.my/8pmY05hqXG" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#134</span><img src="img/56512361087.jpg" alt="Cotton Fitted Sheet" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Fitted Sheet</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="127" data-name="pink floral tumbler" href="https://s.shopee.com.my/gQqH5Cw5u" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#127</span><img src="img/42479172319.jpg" alt="Pink Floral Tumbler" loading="lazy" width="300" height="300"><div class="body"><h2>Pink Floral Tumbler</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="124" data-name="ceramic seasoning jar set" href="https://s.shopee.com.my/2qVKr44ghX" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#124</span><img src="img/41002012438.jpg" alt="Ceramic Seasoning Jar Set" loading="lazy" width="300" height="300"><div class="body"><h2>Ceramic Seasoning Jar Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="128" data-name="tulip night light" href="https://s.shopee.com.my/qkGTOCIly" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#128</span><img src="img/42560871993.jpg" alt="Tulip Night Light" loading="lazy" width="300" height="300"><div class="body"><h2>Tulip Night Light</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="136" data-name="block heel sandals" href="https://s.shopee.com.my/5q4aX2dopR" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#136</span><img src="img/tg11.jpg" alt="Block Heel Sandals" loading="lazy" width="300" height="300"><div class="body"><h2>Block Heel Sandals</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="_default" data-no="138" data-name="compact projector" href="https://s.shopee.com.my/7fWUbts0A5" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#138</span><img src="img/tg50.jpg" alt="Compact Projector" loading="lazy" width="300" height="300"><div class="body"><h2>Compact Projector</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="139" data-name="rose gold buckle ring" href="https://s.shopee.com.my/17DZXI3jo" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#139</span><img src="img/tg56.jpg" alt="Rose Gold Buckle Ring" loading="lazy" width="300" height="300"><div class="body"><h2>Rose Gold Buckle Ring</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="140" data-name="solitaire gold ring" href="https://s.shopee.com.my/4VZcvuLoG8" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#140</span><img src="img/tg57.jpg" alt="Solitaire Gold Ring" loading="lazy" width="300" height="300"><div class="body"><h2>Solitaire Gold Ring</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="88" data-name="wide-leg palazzo jeans" href="https://s.shopee.com.my/3g4N35D5DJ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#88</span><img src="img/22455760152.jpg" alt="Wide-Leg Palazzo Jeans" loading="lazy" width="300" height="300"><div class="body"><h2>Wide-Leg Palazzo Jeans</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="86" data-name="plain black bedding set" href="https://s.shopee.com.my/Lnv4xPlyL" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#86</span><img src="img/21735575372.jpg" alt="Plain Black Bedding Set" loading="lazy" width="300" height="300"><div class="body"><h2>Plain Black Bedding Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="1" data-name="dherbs aura seri bundle" href="https://s.shopee.com.my/60SHpN4CSy" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#1</span><img src="img/11929587897.jpg" alt="DHERBS Aura Seri Bundle" loading="lazy" width="300" height="300"><div class="body"><h2>DHERBS Aura Seri Bundle</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="15" data-name="cordless vacuum with mop" href="https://s.shopee.com.my/2BFZGKInFu" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#15</span><img src="img/23570921686.jpg" alt="Cordless Vacuum with Mop" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Vacuum with Mop</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="89" data-name="long inner jubah" href="https://s.shopee.com.my/7AeFDVzl6J" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#89</span><img src="img/23910916311.jpg" alt="Long Inner Jubah" loading="lazy" width="300" height="300"><div class="body"><h2>Long Inner Jubah</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="91" data-name="long-sleeve training top" href="https://s.shopee.com.my/3VkwqmDiYI" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#91</span><img src="img/25934428174.jpg" alt="Long-Sleeve Training Top" loading="lazy" width="300" height="300"><div class="body"><h2>Long-Sleeve Training Top</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="100" data-name="plaid wide-leg pants" href="https://s.shopee.com.my/9pf0OPpbh5" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#100</span><img src="img/4297296729.jpg" alt="Plaid Wide-Leg Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Plaid Wide-Leg Pants</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="115" data-name="brown formulation body soap" href="https://s.shopee.com.my/1B4gLR2dE" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#115</span><img src="img/951080170.jpg" alt="Brown Formulation Body Soap" loading="lazy" width="300" height="300"><div class="body"><h2>Brown Formulation Body Soap</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="92" data-name="aroma bath gel combo" href="https://s.shopee.com.my/70Kp1D0ORG" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#92</span><img src="img/27072973783.jpg" alt="Aroma Bath Gel Combo" loading="lazy" width="300" height="300"><div class="body"><h2>Aroma Bath Gel Combo</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="93" data-name="light daypack" href="https://s.shopee.com.my/3qNnFOCRrL" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#93</span><img src="img/28035420981.jpg" alt="Light Daypack" loading="lazy" width="300" height="300"><div class="body"><h2>Light Daypack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="85" data-name="cotton silk night dress" href="https://s.shopee.com.my/gQlTZOVIV" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#85</span><img src="img/16308624568.jpg" alt="Cotton Silk Night Dress" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Silk Night Dress</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="87" data-name="cotton sarung hijab" href="https://s.shopee.com.my/30ogFrFcZ7" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#87</span><img src="img/21764502440.jpg" alt="Cotton Sarung Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Cotton Sarung Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="34" data-name="dubai chewy cookie mochi kunafa" href="https://s.shopee.com.my/AAHqn1oL08" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#34</span><img src="img/58156709500.jpg" alt="Dubai Chewy Cookie Mochi Kunafa" loading="lazy" width="300" height="300"><div class="body"><h2>Dubai Chewy Cookie Mochi Kunafa</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="84" data-name="high-waist seamless shorts" href="https://s.shopee.com.my/qkBfsNrxW" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#84</span><img src="img/16092307330.jpg" alt="High-Waist Seamless Shorts" loading="lazy" width="300" height="300"><div class="body"><h2>High-Waist Seamless Shorts</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="3" data-name="crunchy garlic chilli oil" href="https://s.shopee.com.my/1B4gLR2eJ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#3</span><img src="img/18078716262.jpg" alt="Crunchy Garlic Chilli Oil" loading="lazy" width="300" height="300"><div class="body"><h2>Crunchy Garlic Chilli Oil</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="13" data-name="standing fan, 3 speeds" href="https://s.shopee.com.my/1qciriK3ul" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#13</span><img src="img/22981761978.jpg" alt="Standing Fan, 3 Speeds" loading="lazy" width="300" height="300"><div class="body"><h2>Standing Fan, 3 Speeds</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="16" data-name="portable gas stove dessini" href="https://s.shopee.com.my/113bsBNEbW" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#16</span><img src="img/24588136866.jpg" alt="Portable Gas Stove Dessini" loading="lazy" width="300" height="300"><div class="body"><h2>Portable Gas Stove Dessini</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="41" data-name="vitahealth pre+probiotics" href="https://s.shopee.com.my/4qGKRE8dpd" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#41</span><img src="img/20445533205.jpg" alt="VitaHealth Pre+Probiotics" loading="lazy" width="300" height="300"><div class="body"><h2>VitaHealth Pre+Probiotics</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="94" data-name="ginger hair colour dye 400ml" href="https://s.shopee.com.my/1LgSGnLxwh" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#94</span><img src="img/28626545789.jpg" alt="Ginger Hair Colour Dye 400ml" loading="lazy" width="300" height="300"><div class="body"><h2>Ginger Hair Colour Dye 400ml</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="102" data-name="pleated v-neck top" href="https://s.shopee.com.my/7ptw0jxDkV" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#102</span><img src="img/44474311392.jpg" alt="Pleated V-Neck Top" loading="lazy" width="300" height="300"><div class="body"><h2>Pleated V-Neck Top</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="109" data-name="striped button shirt" href="https://s.shopee.com.my/2gBprFGtE0" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#109</span><img src="img/52453813288.jpg" alt="Striped Button Shirt" loading="lazy" width="300" height="300"><div class="body"><h2>Striped Button Shirt</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="110" data-name="instant syria hijab" href="https://s.shopee.com.my/AKbGzKnhgE" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#110</span><img src="img/53759013775.jpg" alt="Instant Syria Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Instant Syria Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="112" data-name="oriental white coffee sachets" href="https://s.shopee.com.my/6fhycb1f7A" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#112</span><img src="img/54212486910.jpg" alt="Oriental White Coffee Sachets" loading="lazy" width="300" height="300"><div class="body"><h2>Oriental White Coffee Sachets</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="83" data-name="burnt sugar cake" href="https://s.shopee.com.my/80DMD2waPY" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#83</span><img src="img/10911050618.jpg" alt="Burnt Sugar Cake" loading="lazy" width="300" height="300"><div class="body"><h2>Burnt Sugar Cake</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="90" data-name="loose palazzo trousers" href="https://s.shopee.com.my/1LgSGnLxvc" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#90</span><img src="img/25094681705.jpg" alt="Loose Palazzo Trousers" loading="lazy" width="300" height="300"><div class="body"><h2>Loose Palazzo Trousers</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="63" data-name="rotating clothes drying rack" href="https://s.shopee.com.my/6Ali1g3Z81" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#63</span><img src="img/40974040849.jpg" alt="Rotating Clothes Drying Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Rotating Clothes Drying Rack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="98" data-name="car neck and lumbar pillow set" href="https://s.shopee.com.my/7KxfPoz7lM" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#98</span><img src="img/41430089956.jpg" alt="Car Neck and Lumbar Pillow Set" loading="lazy" width="300" height="300"><div class="body"><h2>Car Neck and Lumbar Pillow Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="104" data-name="pleated wide-leg pants" href="https://s.shopee.com.my/5AtApq7N9j" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#104</span><img src="img/45104402196.jpg" alt="Pleated Wide-Leg Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Pleated Wide-Leg Pants</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="76" data-name="wide-leg drawstring pants" href="https://s.shopee.com.my/1BN24UMbGZ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#76</span><img src="img/49309743803.jpg" alt="Wide-Leg Drawstring Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Wide-Leg Drawstring Pants</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="99" data-name="muslimah tunic and pants suit" href="https://s.shopee.com.my/113bsBNEcX" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#99</span><img src="img/42422949776.jpg" alt="Muslimah Tunic and Pants Suit" loading="lazy" width="300" height="300"><div class="body"><h2>Muslimah Tunic and Pants Suit</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="107" data-name="matte compact powder" href="https://s.shopee.com.my/2VsPewHWYx" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#107</span><img src="img/46303888105.jpg" alt="Matte Compact Powder" loading="lazy" width="300" height="300"><div class="body"><h2>Matte Compact Powder</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="113" data-name="balloon pants" href="https://s.shopee.com.my/gQlTZOVHQ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#113</span><img src="img/54307651375.jpg" alt="Balloon Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Balloon Pants</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="33" data-name="electric food chopper" href="https://s.shopee.com.my/9APJbBs92t" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#33</span><img src="img/40123515235.jpg" alt="Electric Food Chopper" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Food Chopper</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="108" data-name="instant bawal hijab" href="https://s.shopee.com.my/8V9cnxugOh" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#108</span><img src="img/47608247984.jpg" alt="Instant Bawal Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Instant Bawal Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="96" data-name="electric spice and coffee grinder" href="https://s.shopee.com.my/Lnv4xPlxK" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#96</span><img src="img/40773830736.jpg" alt="Electric Spice and Coffee Grinder" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Spice and Coffee Grinder</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="111" data-name="instant purdah hijab" href="https://s.shopee.com.my/3LRWeTELsC" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#111</span><img src="img/53766047805.jpg" alt="Instant Purdah Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Instant Purdah Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="95" data-name="7-hole non-stick pan" href="https://s.shopee.com.my/1VzsT6LKaf" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#95</span><img src="img/40282749440.jpg" alt="7-Hole Non-Stick Pan" loading="lazy" width="300" height="300"><div class="body"><h2>7-Hole Non-Stick Pan</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="97" data-name="wide-leg baggy jeans" href="https://s.shopee.com.my/3VkwqmDiXF" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#97</span><img src="img/41004694265.jpg" alt="Wide-Leg Baggy Jeans" loading="lazy" width="300" height="300"><div class="body"><h2>Wide-Leg Baggy Jeans</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="101" data-name="hijab telekung set" href="https://s.shopee.com.my/9fLaC6qF11" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#101</span><img src="img/44028271994.jpg" alt="Hijab Telekung Set" loading="lazy" width="300" height="300"><div class="body"><h2>Hijab Telekung Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="106" data-name="printed bawal hijab" href="https://s.shopee.com.my/9KijnUrVgv" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#106</span><img src="img/45914919267.jpg" alt="Printed Bawal Hijab" loading="lazy" width="300" height="300"><div class="body"><h2>Printed Bawal Hijab</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="114" data-name="lidded stainless casserole set" href="https://s.shopee.com.my/4LK3qJAXqU" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#114</span><img src="img/55661608428.jpg" alt="Lidded Stainless Casserole Set" loading="lazy" width="300" height="300"><div class="body"><h2>Lidded Stainless Casserole Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="103" data-name="straight-leg jeans" href="https://s.shopee.com.my/5LCb296jom" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#103</span><img src="img/44868331948.jpg" alt="Straight-Leg Jeans" loading="lazy" width="300" height="300"><div class="body"><h2>Straight-Leg Jeans</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="105" data-name="lace baju kurung" href="https://s.shopee.com.my/9zyQaioyL7" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#105</span><img src="img/45566267770.jpg" alt="Lace Baju Kurung" loading="lazy" width="300" height="300"><div class="body"><h2>Lace Baju Kurung</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="47" data-name="honeycomb stainless steel wok" href="https://s.shopee.com.my/3VkpjsR6Ma" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#47</span><img src="img/24914619296.jpg" alt="Honeycomb Stainless Steel Wok" loading="lazy" width="300" height="300"><div class="body"><h2>Honeycomb Stainless Steel Wok</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="39" data-name="foldable storage bench" href="https://s.shopee.com.my/20w1x7WoPw" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#39</span><img src="img/15098540758.jpg" alt="Foldable Storage Bench" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Storage Bench</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="38" data-name="cat backpack carrier" href="https://s.shopee.com.my/1BMuxaZz5u" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#38</span><img src="img/11970364753.jpg" alt="Cat Backpack Carrier" loading="lazy" width="300" height="300"><div class="body"><h2>Cat Backpack Carrier</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="44" data-name="hooded zip windbreaker" href="https://s.shopee.com.my/AKb9sR15VK" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#44</span><img src="img/23820114366.jpg" alt="Hooded Zip Windbreaker" loading="lazy" width="300" height="300"><div class="body"><h2>Hooded Zip Windbreaker</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="50" data-name="smart watch" href="https://s.shopee.com.my/6L5175GJcQ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#50</span><img src="img/25184734808.jpg" alt="Smart Watch" loading="lazy" width="300" height="300"><div class="body"><h2>Smart Watch</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="55" data-name="insulated flask 1.5l" href="https://s.shopee.com.my/40h6KnPCLd" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#55</span><img src="img/28068923211.jpg" alt="Insulated Flask 1.5L" loading="lazy" width="300" height="300"><div class="body"><h2>Insulated Flask 1.5L</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="66" data-name="six-pocket cargo pants" href="https://s.shopee.com.my/9APCUI5WrC" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#66</span><img src="img/42131762495.jpg" alt="Six-Pocket Cargo Pants" loading="lazy" width="300" height="300"><div class="body"><h2>Six-Pocket Cargo Pants</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="49" data-name="sambal belacan 270g" href="https://s.shopee.com.my/4fwn81Mezh" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#49</span><img src="img/25121517690.jpg" alt="Sambal Belacan 270g" loading="lazy" width="300" height="300"><div class="body"><h2>Sambal Belacan 270g</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="24" data-name="tava adjustable metal shelf" href="https://s.shopee.com.my/4VdMviNIKk" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#24</span><img src="img/27433824749.jpg" alt="TAVA Adjustable Metal Shelf" loading="lazy" width="300" height="300"><div class="body"><h2>TAVA Adjustable Metal Shelf</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="60" data-name="nasi khowmok instant set" href="https://s.shopee.com.my/8fSvtN7Qt6" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#60</span><img src="img/29323123552.jpg" alt="Nasi Khowmok Instant Set" loading="lazy" width="300" height="300"><div class="body"><h2>Nasi Khowmok Instant Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="62" data-name="electric egg boiler and steamer" href="https://s.shopee.com.my/80DF699yF2" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#62</span><img src="img/29919260965.jpg" alt="Electric Egg Boiler and Steamer" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Egg Boiler and Steamer</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kids" data-no="79" data-name="kids cotton pyjama set" href="https://s.shopee.com.my/8Kq5Ul8hZ8" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#79</span><img src="img/5261288082.jpg" alt="Kids Cotton Pyjama Set" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Cotton Pyjama Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="40" data-name="cordless impact wrench set" href="https://s.shopee.com.my/2BFS9QWB3w" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#40</span><img src="img/15948821520.jpg" alt="Cordless Impact Wrench Set" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Impact Wrench Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="42" data-name="crispy anchovy sambal 100g" href="https://s.shopee.com.my/30oZ8xT0Nb" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#42</span><img src="img/21180181830.jpg" alt="Crispy Anchovy Sambal 100g" loading="lazy" width="300" height="300"><div class="body"><h2>Crispy Anchovy Sambal 100g</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kids" data-no="48" data-name="kids telekung set" href="https://s.shopee.com.my/4B0WX6OZ0e" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#48</span><img src="img/25001927648.jpg" alt="Kids Telekung Set" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Telekung Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="53" data-name="asam boi sweet and sour jar" href="https://s.shopee.com.my/3B7zLGSN2c" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#53</span><img src="img/27834687390.jpg" alt="Asam Boi Sweet and Sour Jar" loading="lazy" width="300" height="300"><div class="body"><h2>Asam Boi Sweet and Sour Jar</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="59" data-name="crispy tempeh sambal" href="https://s.shopee.com.my/60SAiTHaHJ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#59</span><img src="img/29315127739.jpg" alt="Crispy Tempeh Sambal" loading="lazy" width="300" height="300"><div class="body"><h2>Crispy Tempeh Sambal</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="65" data-name="thai fried chicken seasoning" href="https://s.shopee.com.my/1qcbkoXRjy" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#65</span><img src="img/41419080511.jpg" alt="Thai Fried Chicken Seasoning" loading="lazy" width="300" height="300"><div class="body"><h2>Thai Fried Chicken Seasoning</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="77" data-name="insulated tumbler with charm" href="https://s.shopee.com.my/3LRPXZRjhZ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#77</span><img src="img/50010879251.jpg" alt="Insulated Tumbler with Charm" loading="lazy" width="300" height="300"><div class="body"><h2>Insulated Tumbler with Charm</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="80" data-name="13-piece cookware set" href="https://s.shopee.com.my/7Ae86cD8uU" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#80</span><img src="img/55763967437.jpg" alt="13-Piece Cookware Set" loading="lazy" width="300" height="300"><div class="body"><h2>13-Piece Cookware Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="43" data-name="telekung cotton set" href="https://s.shopee.com.my/50ZdWdLOJn" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#43</span><img src="img/21185987983.jpg" alt="Telekung Cotton Set" loading="lazy" width="300" height="300"><div class="body"><h2>Telekung Cotton Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="68" data-name="v-neck button blouse" href="https://s.shopee.com.my/6L5175GJbP" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#68</span><img src="img/42211054092.jpg" alt="V-Neck Button Blouse" loading="lazy" width="300" height="300"><div class="body"><h2>V-Neck Button Blouse</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="72" data-name="sweet fish satey snack" href="https://s.shopee.com.my/BUNlkdn7k" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#72</span><img src="img/44181064384.jpg" alt="Sweet Fish Satey Snack" loading="lazy" width="300" height="300"><div class="body"><h2>Sweet Fish Satey Snack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="58" data-name="muslimah tunic and pants set" href="https://s.shopee.com.my/1LgL9tZLkr" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#58</span><img src="img/28883202525.jpg" alt="Muslimah Tunic and Pants Set" loading="lazy" width="300" height="300"><div class="body"><h2>Muslimah Tunic and Pants Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="46" data-name="leather shoulder handbag" href="https://s.shopee.com.my/9zyJTp2MAD" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#46</span><img src="img/24845765742.jpg" alt="Leather Shoulder Handbag" loading="lazy" width="300" height="300"><div class="body"><h2>Leather Shoulder Handbag</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="57" data-name="dark chocolate almond cluster" href="https://s.shopee.com.my/7ptotqAbYY" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#57</span><img src="img/28785054481.jpg" alt="Dark Chocolate Almond Cluster" loading="lazy" width="300" height="300"><div class="body"><h2>Dark Chocolate Almond Cluster</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="67" data-name="scented toilet cleaner spray" href="https://s.shopee.com.my/AUua4k0S9K" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#67</span><img src="img/42180930383.jpg" alt="Scented Toilet Cleaner Spray" loading="lazy" width="300" height="300"><div class="body"><h2>Scented Toilet Cleaner Spray</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="69" data-name="mini electric waffle maker" href="https://s.shopee.com.my/905mHz6ACB" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#69</span><img src="img/42327158757.jpg" alt="Mini Electric Waffle Maker" loading="lazy" width="300" height="300"><div class="body"><h2>Mini Electric Waffle Maker</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="78" data-name="stackable drawer organiser" href="https://s.shopee.com.my/8V9Vh484D8" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#78</span><img src="img/52306236457.jpg" alt="Stackable Drawer Organiser" loading="lazy" width="300" height="300"><div class="body"><h2>Stackable Drawer Organiser</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="56" data-name="camping tableware set" href="https://s.shopee.com.my/20w1x7WoOv" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#56</span><img src="img/28550449166.jpg" alt="Camping Tableware Set" loading="lazy" width="300" height="300"><div class="body"><h2>Camping Tableware Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="73" data-name="kek batik chocolate bites" href="https://s.shopee.com.my/6fhrVhF2vN" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#73</span><img src="img/44320874938.jpg" alt="Kek Batik Chocolate Bites" loading="lazy" width="300" height="300"><div class="body"><h2>Kek Batik Chocolate Bites</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="74" data-name="homemade sukiya sauce 300ml" href="https://s.shopee.com.my/6q1Hi0EPaO" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#74</span><img src="img/46111803735.jpg" alt="Homemade Sukiya Sauce 300ml" loading="lazy" width="300" height="300"><div class="body"><h2>Homemade Sukiya Sauce 300ml</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="52" data-name="hen egg basket" href="https://s.shopee.com.my/AAHjg81ipE" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#52</span><img src="img/27239724559.jpg" alt="Hen Egg Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Hen Egg Basket</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="75" data-name="folding recliner chair" href="https://s.shopee.com.my/5LCTvFK7dF" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#75</span><img src="img/48160576324.jpg" alt="Folding Recliner Chair" loading="lazy" width="300" height="300"><div class="body"><h2>Folding Recliner Chair</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="45" data-name="rattan basket storage rack" href="https://s.shopee.com.my/9petHW2zWJ" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#45</span><img src="img/24718012191.jpg" alt="Rattan Basket Storage Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Rattan Basket Storage Rack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="64" data-name="electric scrub brush" href="https://s.shopee.com.my/2BFS9QWB4z" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#64</span><img src="img/41226764478.jpg" alt="Electric Scrub Brush" loading="lazy" width="300" height="300"><div class="body"><h2>Electric Scrub Brush</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="82" data-name="peplum baju kurung" href="https://s.shopee.com.my/8AWfIS9Ku5" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#82</span><img src="img/57756145272.jpg" alt="Peplum Baju Kurung" loading="lazy" width="300" height="300"><div class="body"><h2>Peplum Baju Kurung</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="81" data-name="pull-out kitchen rack" href="https://s.shopee.com.my/AUua4k0SAN" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#81</span><img src="img/57265127815.jpg" alt="Pull-Out Kitchen Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Pull-Out Kitchen Rack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="9" data-name="chef zam instant fried rice" href="https://s.shopee.com.my/W76FG4xLm" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#9</span><img src="img/20384021767.jpg" alt="Chef Zam Instant Fried Rice" loading="lazy" width="300" height="300"><div class="body"><h2>Chef Zam Instant Fried Rice</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="18" data-name="mini electric rice cooker 1.8l" href="https://s.shopee.com.my/8KpyuQdmUi" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#18</span><img src="img/25226750641.jpg" alt="Mini Electric Rice Cooker 1.8L" loading="lazy" width="300" height="300"><div class="body"><h2>Mini Electric Rice Cooker 1.8L</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="26" data-name="sambal garing kruk kruk ateen" href="https://s.shopee.com.my/4B0PwltdxL" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#26</span><img src="img/27872309197.jpg" alt="Sambal Garing Kruk Kruk Ateen" loading="lazy" width="300" height="300"><div class="body"><h2>Sambal Garing Kruk Kruk Ateen</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="35" data-name="aglio olio seasoning" href="https://s.shopee.com.my/1LgDEn1mf3" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#35</span><img src="img/6058598792.jpg" alt="Aglio Olio Seasoning" loading="lazy" width="300" height="300"><div class="body"><h2>Aglio Olio Seasoning</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="10" data-name="swissthomas electric kettle 2.2l" href="https://s.shopee.com.my/Lng2x5agl" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#10</span><img src="img/21056927705.jpg" alt="SwissThomas Electric Kettle 2.2L" loading="lazy" width="300" height="300"><div class="body"><h2>SwissThomas Electric Kettle 2.2L</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="17" data-name="swissthomas capsule chopper 900ml" href="https://s.shopee.com.my/50ZVbWnpDb" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#17</span><img src="img/24909111872.jpg" alt="SwissThomas Capsule Chopper 900ml" loading="lazy" width="300" height="300"><div class="body"><h2>SwissThomas Capsule Chopper 900ml</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="11" data-name="foldable clothes drying rack" href="https://s.shopee.com.my/9zyCtUXR70" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#11</span><img src="img/2107463589.jpg" alt="Foldable Clothes Drying Rack" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Clothes Drying Rack</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="21" data-name="portable handheld fan" href="https://s.shopee.com.my/7VGrutgxBH" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#21</span><img src="img/26429989630.jpg" alt="Portable Handheld Fan" loading="lazy" width="300" height="300"><div class="body"><h2>Portable Handheld Fan</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="25" data-name="stainless steel handheld tumbler 900ml" href="https://s.shopee.com.my/905fhebF9x" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#25</span><img src="img/27559234728.jpg" alt="Stainless Steel Handheld Tumbler 900ml" loading="lazy" width="300" height="300"><div class="body"><h2>Stainless Steel Handheld Tumbler 900ml</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="4" data-name="dr.althea 345 cream" href="https://s.shopee.com.my/2qV2MJyifD" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#4</span><img src="img/18503504263.jpg" alt="Dr.Althea 345 Cream" loading="lazy" width="300" height="300"><div class="body"><h2>Dr.Althea 345 Cream</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="8" data-name="cordless mini chopper 250ml" href="https://s.shopee.com.my/113MqB33Kx" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#8</span><img src="img/19994131505.jpg" alt="Cordless Mini Chopper 250ml" loading="lazy" width="300" height="300"><div class="body"><h2>Cordless Mini Chopper 250ml</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="12" data-name="rice storage box" href="https://s.shopee.com.my/9fLMUsYhmq" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#12</span><img src="img/22278455894.jpg" alt="Rice Storage Box" loading="lazy" width="300" height="300"><div class="body"><h2>Rice Storage Box</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="20" data-name="non-stick wok 34cm" href="https://s.shopee.com.my/40gzkSuHII" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#20</span><img src="img/26162011609.jpg" alt="Non-Stick Wok 34cm" loading="lazy" width="300" height="300"><div class="body"><h2>Non-Stick Wok 34cm</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="22" data-name="muslimah top and pants set" href="https://s.shopee.com.my/8KpyuQdmVl" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#22</span><img src="img/26557777683.jpg" alt="Muslimah Top and Pants Set" loading="lazy" width="300" height="300"><div class="body"><h2>Muslimah Top and Pants Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="28" data-name="mini massage gun" href="https://s.shopee.com.my/W77a27bOT" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#28</span><img src="img/28506753775.jpg" alt="Mini Massage Gun" loading="lazy" width="300" height="300"><div class="body"><h2>Mini Massage Gun</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="23" data-name="foldable laundry basket on wheels" href="https://s.shopee.com.my/BUHBQ8s4R" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#23</span><img src="img/26863981267.jpg" alt="Foldable Laundry Basket on Wheels" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Laundry Basket on Wheels</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Food" data-no="36" data-name="keropok lekor original terengganu" href="https://s.shopee.com.my/4qG5PDoSYW" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#36</span><img src="img/8581358800.jpg" alt="Keropok Lekor Original Terengganu" loading="lazy" width="300" height="300"><div class="body"><h2>Keropok Lekor Original Terengganu</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Fashion" data-no="5" data-name="men&#x27;s linen short sleeve shirt" href="https://s.shopee.com.my/1qcVAU2Whc" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#5</span><img src="img/18708880379.jpg" alt="Men&#x27;s Linen Short Sleeve Shirt" loading="lazy" width="300" height="300"><div class="body"><h2>Men&#x27;s Linen Short Sleeve Shirt</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kids" data-no="14" data-name="kids makeup case play set" href="https://s.shopee.com.my/5fpDjWnvtw" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#14</span><img src="img/23238419129.jpg" alt="Kids Makeup Case Play Set" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Makeup Case Play Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="19" data-name="rechargeable hair clipper" href="https://s.shopee.com.my/5q8dvpnIYz" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#19</span><img src="img/25681024467.jpg" alt="Rechargeable Hair Clipper" loading="lazy" width="300" height="300"><div class="body"><h2>Rechargeable Hair Clipper</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="31" data-name="homeworth rubbish bin 10/15l" href="https://s.shopee.com.my/1BMn2U2Pzy" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#31</span><img src="img/29367440495.jpg" alt="Homeworth Rubbish Bin 10/15L" loading="lazy" width="300" height="300"><div class="body"><h2>Homeworth Rubbish Bin 10/15L</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="6" data-name="foldable laundry basket" href="https://s.shopee.com.my/6AlUKRm1t9" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#6</span><img src="img/19188634763.jpg" alt="Foldable Laundry Basket" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Laundry Basket</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kids" data-no="2" data-name="kids princess play tent" href="https://s.shopee.com.my/1gJ4yB3A1Y" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#2</span><img src="img/14671386889.jpg" alt="Kids Princess Play Tent" loading="lazy" width="300" height="300"><div class="body"><h2>Kids Princess Play Tent</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Home" data-no="29" data-name="foldable laptop bed table" href="https://s.shopee.com.my/2BFLZ61G0l" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#29</span><img src="img/28620271028.jpg" alt="Foldable Laptop Bed Table" loading="lazy" width="300" height="300"><div class="body"><h2>Foldable Laptop Bed Table</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Personal care" data-no="32" data-name="naturie hatomugi skin lotion 500ml" href="https://s.shopee.com.my/7KxRiahaXH" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#32</span><img src="img/306421550.jpg" alt="Naturie Hatomugi Skin Lotion 500ml" loading="lazy" width="300" height="300"><div class="body"><h2>Naturie Hatomugi Skin Lotion 500ml</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kids" data-no="37" data-name="vtech 2-in-1 basketball and soccer set" href="https://s.shopee.com.my/8V9P6jd9Am" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#37</span><img src="img/9952432232.jpg" alt="VTech 2-in-1 Basketball and Soccer Set" loading="lazy" width="300" height="300"><div class="body"><h2>VTech 2-in-1 Basketball and Soccer Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kids" data-no="27" data-name="girls&#x27; party dress" href="https://s.shopee.com.my/9KiW6GZyTr" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#27</span><img src="img/27971615404.jpg" alt="Girls&#x27; Party Dress" loading="lazy" width="300" height="300"><div class="body"><h2>Girls&#x27; Party Dress</h2><span class="btn">Buy on Shopee</span></div></a>
+<a class="card" data-cat="Kitchen" data-no="30" data-name="ceramic tableware set" href="https://s.shopee.com.my/3B7skvxRzF" target="_blank" rel="sponsored nofollow noopener">
+  <span class="no">#30</span><img src="img/28935887546.jpg" alt="Ceramic Tableware Set" loading="lazy" width="300" height="300"><div class="body"><h2>Ceramic Tableware Set</h2><span class="btn">Buy on Shopee</span></div></a>
+<div class="empty hide" id="empty">No products found. Try another word or number.</div>
 </main>
 <footer>Prices and stock can change on Shopee. Check the product details on Shopee before buying. Updated 2026-10-14.</footer>
 <script>
-document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
-  document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
-  var c=b.dataset.c;document.querySelectorAll('.card').forEach(function(k){k.classList.toggle('hide',c!=='Semua'&&k.dataset.cat!==c)});
-})});
+function matches(q, no, name) {
+  q = q.toLowerCase().trim().replace(/^(no\.?|#)\s*/, '');
+  if (!q) return true;
+  if (/^\d+$/.test(q)) return String(no) === q;
+  return q.split(/\s+/).every(function (w) { return name.indexOf(w) !== -1; });
+}
+var cat = 'All';
+function apply() {
+  var q = document.getElementById('q').value, shown = 0;
+  document.querySelectorAll('.card').forEach(function (k) {
+    var ok = (cat === 'All' || k.dataset.cat === cat) && matches(q, k.dataset.no, k.dataset.name);
+    k.classList.toggle('hide', !ok); if (ok) shown++;
+  });
+  document.getElementById('empty').classList.toggle('hide', shown > 0);
+}
+document.querySelectorAll('.chip').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.querySelectorAll('.chip').forEach(function (x) { x.classList.remove('on'); });
+    b.classList.add('on'); cat = b.dataset.c; apply();
+  });
+});
+document.getElementById('q').addEventListener('input', apply);
 </script></body></html>

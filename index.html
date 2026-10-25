@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0H7PHLY56Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0H7PHLY56Q');
+</script>
 <title>Motion Enable - Product picks</title>
 <meta name="description" content="A list of product picks. Affiliate links.">
 <meta property="og:title" content="Motion Enable - Product picks"><meta property="og:type" content="website">
@@ -347,7 +355,7 @@ footer{text-align:center;color:#888;font-size:12px;padding:0 16px 32px;line-heig
   <span class="no">#174</span><img src="img/56566325756.jpg" alt="Checkered Carry Bottle" loading="lazy" width="300" height="300"><div class="body"><h2>Checkered Carry Bottle</h2><span class="btn">Buy on Shopee</span></div></a>
 <div class="empty hide" id="empty">No products found. Try another word or number.</div>
 </main>
-<footer>Prices and stock can change on Shopee. Check the product details on Shopee before buying. Updated 2026-10-24.</footer>
+<footer>Prices and stock can change on Shopee. Check the product details on Shopee before buying. Updated 2026-10-24. This page collects anonymous visit statistics (Google Analytics).</footer>
 <script>
 function matches(q, no, name) {
   q = q.toLowerCase().trim().replace(/^(no\.?|#)\s*/, '');
@@ -371,4 +379,25 @@ document.querySelectorAll('.chip').forEach(function (b) {
   });
 });
 document.getElementById('q').addEventListener('input', apply);
+// visit statistics (Google Analytics events): product clicks, searches, category chips
+function track(name, params) { if (typeof gtag === 'function') { params.transport_type = 'beacon'; gtag('event', name, params); } }
+document.querySelectorAll('.card').forEach(function (k) {
+  k.addEventListener('click', function () {
+    var h = k.querySelector('h2');
+    track('shopee_click', { product_no: k.dataset.no, product_name: h ? h.textContent : k.dataset.name, product_cat: k.dataset.cat });
+  });
+});
+var searchTimer;
+document.getElementById('q').addEventListener('input', function (e) {
+  clearTimeout(searchTimer);
+  var v = e.target.value.trim();
+  if (v.length < 1) return;
+  searchTimer = setTimeout(function () {
+    var n = 0; document.querySelectorAll('.card').forEach(function (k) { if (!k.classList.contains('hide')) n++; });
+    track('search', { search_term: v.slice(0, 40), results: n });
+  }, 1200);
+});
+document.querySelectorAll('.chip').forEach(function (b) {
+  b.addEventListener('click', function () { track('category_click', { category: b.dataset.c }); });
+});
 </script></body></html>

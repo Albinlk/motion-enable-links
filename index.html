@@ -345,7 +345,7 @@ var cat = 'All';
 function apply() {
   var q = document.getElementById('q').value, shown = 0;
   document.querySelectorAll('.card').forEach(function (k) {
-    var ok = (cat === 'All' || k.dataset.cat === cat) && matches(q, k.dataset.no, k.dataset.name);
+    var ok = (cat === 'All' || (cat === '__pick' ? k.dataset.pick === '1' : k.dataset.cat === cat)) && matches(q, k.dataset.no, k.dataset.name);
     k.classList.toggle('hide', !ok); if (ok) shown++;
   });
   document.getElementById('empty').classList.toggle('hide', shown > 0);
